@@ -28,12 +28,8 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
 			private double sliderXdirside;
 			private double sliderSpeedset;
 			private double sliderSpeed;
-
-			
-			
-			
-			
 			private MapGenerator map;
+			
 			
 			public Gameplay() {
 				map = new MapGenerator(3, 7);
@@ -49,7 +45,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
 				obj.setColor(Color.black);
 				obj.fillRect(1, 1, 692, 592);
 				
-			//	map.draw((Graphics2D) obj);
+				map.draw((Graphics2D) obj);
 				
 				obj.setColor(Color.cyan);
 				obj.fillRect(0, 0, 3, 592);
